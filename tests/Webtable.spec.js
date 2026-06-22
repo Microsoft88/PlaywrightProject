@@ -6,7 +6,7 @@ await page.goto('https://qavbox.github.io/demo/webtable/')
 const rowdata = await page.locator('//table[@id="table02"]//tbody//tr[3]//td').allTextContents()
 console.log(rowdata)
 
-   await expect(rowdata).toContain('Junior Technical Author') //if available in any row then it will display entire row
+   await expect(rowdata).toContain('Junior Technical ') //if available in any row then it will display entire row
    console.log(rowdata)
    await expect (rowdata).toEqual([   
    'Ashton Cox',
