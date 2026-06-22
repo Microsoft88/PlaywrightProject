@@ -15,8 +15,7 @@ console.log(rowdata)
   '66',
   '2009/01/12',
   '$86,000'])
-   console.log(rowdata)
-   
+   console.log(rowdata)   
    //Select 1st column in 3rd row from the table 
 const columndata = await page.locator('//table[@id="table02"]//tbody//tr[3]//td[1]').textContent()
 console.log(columndata)})
